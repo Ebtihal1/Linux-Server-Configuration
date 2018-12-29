@@ -9,6 +9,7 @@
 
 ### Server information:
 **Public IP address:** 45.33.56.207
+**DNS name:** www.techitemlist.com
 **Operating System:** Ubuntu 16.04 LTS
 **Key:** ssh -i ~/.ssh/authorized_keys -p 2200 grader@45.33.56.207
 **SSH port:** 2200
@@ -241,6 +242,14 @@ After register DNS Name do the following:
 **<web link>/login** 
 **<web link>/gconnect** 
 * Download updated JSON file add it to project folder **/var/www/catalog/catalog**
+
+**Note:**
+ Update **sshd_config** to prevent any unsecure usage for root user 
+* Change **PermitRootLogin** To **no** 
+  `sudo nano /etc/ssh/sshd_config`
+* Restart SSH 
+   `sudo service ssh restart`
+
 
 
 #### Resource: 
