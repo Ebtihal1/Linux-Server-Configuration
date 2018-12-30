@@ -163,9 +163,9 @@ app.run(host='Public_Ip address', port=80)
 write the code below
 ```
 <VirtualHost *:80>
-    ServerName 35.234.117.82
-    ServerAlias
-    ServerAdmin admin@35.234.117.82
+    ServerName www.techitemlist.com
+    ServerAlias techitemlist.com
+    ServerAdmin admin@techitemlist.com
     WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
     WSGIProcessGroup catalog	
     WSGIScriptAlias / /var/www/catalog/catalog.wsgi
